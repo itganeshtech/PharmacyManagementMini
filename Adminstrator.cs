@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PharmacyManagementMini
 {
     public partial class Adminstrator : Form
@@ -15,6 +16,40 @@ namespace PharmacyManagementMini
         public Adminstrator()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            uC_Dashboard1.Visible = true;
+            uC_Dashboard1.BringToFront();
+            
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Adminstrator_Load(object sender, EventArgs e)
+        {
+            uC_Dashboard1.Visible = false;
         }
     }
 }
