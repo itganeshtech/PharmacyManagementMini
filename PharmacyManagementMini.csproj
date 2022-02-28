@@ -52,11 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministratorUC\UC_Dashboard.cs">
+    <Compile Include="AdministratorUC\UC_DashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AdministratorUC\UC_Dashboard.Designer.cs">
-      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    <Compile Include="AdministratorUC\UC_DashBoard.Designer.cs">
+      <DependentUpon>UC_DashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Adminstrator.cs">
       <SubType>Form</SubType>
@@ -72,8 +72,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdministratorUC\UC_Dashboard.resx">
-      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="AdministratorUC\UC_DashBoard.resx">
+      <DependentUpon>UC_DashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adminstrator.resx">
       <DependentUpon>Adminstrator.cs</DependentUpon>
@@ -103,5 +103,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

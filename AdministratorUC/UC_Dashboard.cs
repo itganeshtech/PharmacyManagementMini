@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PharmacyManagementMini.AdministratorUC
 {
-    public partial class UC_Dashboard : UserControl
+    public partial class UC_DashBoard : UserControl
     {
-        public UC_Dashboard()
+        public UC_DashBoard()
         {
             InitializeComponent();
         }

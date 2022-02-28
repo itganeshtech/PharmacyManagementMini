@@ -42,7 +42,7 @@ namespace PharmacyManagementMini
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_Dashboard1 = new PharmacyManagementMini.AdministratorUC.UC_Dashboard();
+            this.uC_DashBoard1 = new PharmacyManagementMini.AdministratorUC.UC_DashBoard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -61,7 +61,7 @@ namespace PharmacyManagementMini
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 730);
+            this.panel1.Size = new System.Drawing.Size(275, 770);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -71,9 +71,9 @@ namespace PharmacyManagementMini
             this.label2.ForeColor = System.Drawing.Color.Yellow;
             this.label2.Location = new System.Drawing.Point(106, 610);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 29);
+            this.label2.Size = new System.Drawing.Size(115, 29);
             this.label2.TabIndex = 5;
-            this.label2.Text = "User Name";
+            this.label2.Text = "Btechdays";
             // 
             // btnLogOut
             // 
@@ -203,33 +203,35 @@ namespace PharmacyManagementMini
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.uC_Dashboard1);
+            this.panel2.Controls.Add(this.uC_DashBoard1);
             this.panel2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(276, 1);
+            this.panel2.Location = new System.Drawing.Point(276, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1089, 729);
+            this.panel2.Size = new System.Drawing.Size(1089, 770);
             this.panel2.TabIndex = 1;
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this.panel2;
             // 
-            // uC_Dashboard1
+            // uC_DashBoard1
             // 
-            this.uC_Dashboard1.BackColor = System.Drawing.Color.White;
-            this.uC_Dashboard1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uC_Dashboard1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Dashboard1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.uC_Dashboard1.Name = "uC_Dashboard1";
-            this.uC_Dashboard1.Size = new System.Drawing.Size(1089, 729);
-            this.uC_Dashboard1.TabIndex = 0;
+            this.uC_DashBoard1.AllowDrop = true;
+            this.uC_DashBoard1.AutoSize = true;
+            this.uC_DashBoard1.BackColor = System.Drawing.Color.White;
+            this.uC_DashBoard1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.uC_DashBoard1.Location = new System.Drawing.Point(0, 0);
+            this.uC_DashBoard1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.uC_DashBoard1.Name = "uC_DashBoard1";
+            this.uC_DashBoard1.Size = new System.Drawing.Size(977, 1104);
+            this.uC_DashBoard1.TabIndex = 0;
             // 
             // Adminstrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1159, 667);
+            this.ClientSize = new System.Drawing.Size(1364, 729);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Adminstrator";
@@ -240,6 +242,7 @@ namespace PharmacyManagementMini
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -257,6 +260,6 @@ namespace PharmacyManagementMini
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private AdministratorUC.UC_Dashboard uC_Dashboard1;
+        private AdministratorUC.UC_DashBoard uC_DashBoard1;
     }
 }
