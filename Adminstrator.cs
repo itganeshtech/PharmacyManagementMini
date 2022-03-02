@@ -30,7 +30,7 @@ namespace PharmacyManagementMini
             this.Hide();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnDashboard_Click(object sender, EventArgs e)
         {
             uC_DashBoard1.Visible = true;
             uC_DashBoard1.BringToFront();
@@ -49,6 +49,8 @@ namespace PharmacyManagementMini
         private void Adminstrator_Load(object sender, EventArgs e)
         {
             uC_DashBoard1.Visible = false;
+            btnDashboard.PerformClick();
+
             
         }
     }

@@ -177,7 +177,7 @@ namespace PharmacyManagementMini
             this.btnDashboard.Size = new System.Drawing.Size(227, 45);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label1
             // 
@@ -216,14 +216,12 @@ namespace PharmacyManagementMini
             // 
             // uC_DashBoard1
             // 
-            this.uC_DashBoard1.AllowDrop = true;
             this.uC_DashBoard1.AutoSize = true;
             this.uC_DashBoard1.BackColor = System.Drawing.Color.White;
-            this.uC_DashBoard1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.uC_DashBoard1.Location = new System.Drawing.Point(0, 0);
-            this.uC_DashBoard1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.uC_DashBoard1.Name = "uC_DashBoard1";
-            this.uC_DashBoard1.Size = new System.Drawing.Size(977, 1104);
+            this.uC_DashBoard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.uC_DashBoard1.Size = new System.Drawing.Size(1089, 770);
             this.uC_DashBoard1.TabIndex = 0;
             // 
             // Adminstrator

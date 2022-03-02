@@ -33,7 +33,7 @@ namespace PharmacyManagementMini
 
         private void btnSign_Click(object sender, EventArgs e)
         {
-            if(txtUserName.Text=="user"&& txtPassword.Text=="pwd")
+            if(txtUserName.Text=="aa" && txtPassword.Text=="aa")
             {
                 Adminstrator am = new Adminstrator();
                 am.Show();
