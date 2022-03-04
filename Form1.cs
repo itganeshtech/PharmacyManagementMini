@@ -12,6 +12,9 @@ namespace PharmacyManagementMini
 {
     public partial class Form1 : Form
     {
+        function fn=new function();
+        String query;
+        DataSet ds;
         public Form1()
         {
             InitializeComponent();
@@ -33,17 +36,67 @@ namespace PharmacyManagementMini
 
         private void btnSign_Click(object sender, EventArgs e)
         {
-            if(txtUserName.Text=="aa" && txtPassword.Text=="aa")
+            query = "select * from users";
+            ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count == 0)
             {
-                Adminstrator am = new Adminstrator();
-                am.Show();
-                this.Hide();
+                if (txtUserName.Text == "root" && txtPassword.Text == "root")
+                {
+                    Adminstrator admin = new Adminstrator();
+                    admin.Show();
+                    this.Hide();
+
+                }
             }
             else
             {
-                MessageBox.Show("Wrong Password or Username.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                query = "select * from users where username='" + txtUserName.Text + "'and pass='" + txtPassword.Text + "'";
+                ds = fn.getData(query);
+                if (ds.Tables[0].Rows.Count != 0)
+                {
+                    String role = ds.Tables[0].Rows[0][1].ToString();
+
+                    if (role == "Administrator")
+                    {
+                        Adminstrator admin = new Adminstrator();
+                        admin.Show();
+                        this.Hide();
+
+                    }
+                    else if (role == "Pharmacist")
+                    {
+                        Pharmacist pharm = new Pharmacist();
+                        pharm.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Username OR Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
 
-        }
+
+
+
+
+
+
+
+
+                //SAMPLE CODE FOR HARD CODED USER NAME AND PASSWORD
+                //if(txtUserName.Text=="aa" && txtPassword.Text=="aa")
+                //{
+                //    Adminstrator am = new Adminstrator();
+                //    am.Show();
+                //    this.Hide();
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Wrong Password or Username.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                //}
+
+            }
     }
 }
