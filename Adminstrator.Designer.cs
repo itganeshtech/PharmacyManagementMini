@@ -41,8 +41,10 @@ namespace PharmacyManagementMini
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_AddUser1 = new PharmacyManagementMini.AdministratorUC.UC_AddUser();
             this.uC_DashBoard1 = new PharmacyManagementMini.AdministratorUC.UC_DashBoard();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -203,6 +205,7 @@ namespace PharmacyManagementMini
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uC_AddUser1);
             this.panel2.Controls.Add(this.uC_DashBoard1);
             this.panel2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(276, 0);
@@ -210,19 +213,33 @@ namespace PharmacyManagementMini
             this.panel2.Size = new System.Drawing.Size(1089, 770);
             this.panel2.TabIndex = 1;
             // 
-            // guna2Elipse1
+            // uC_AddUser1
             // 
-            this.guna2Elipse1.TargetControl = this.panel2;
+            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
+            this.uC_AddUser1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_AddUser1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.uC_AddUser1.Location = new System.Drawing.Point(0, 3);
+            this.uC_AddUser1.Name = "uC_AddUser1";
+            this.uC_AddUser1.Size = new System.Drawing.Size(1089, 770);
+            this.uC_AddUser1.TabIndex = 1;
             // 
             // uC_DashBoard1
             // 
             this.uC_DashBoard1.AutoSize = true;
             this.uC_DashBoard1.BackColor = System.Drawing.Color.White;
-            this.uC_DashBoard1.Location = new System.Drawing.Point(0, 0);
+            this.uC_DashBoard1.Location = new System.Drawing.Point(0, 2);
             this.uC_DashBoard1.Name = "uC_DashBoard1";
             this.uC_DashBoard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.uC_DashBoard1.Size = new System.Drawing.Size(1089, 770);
             this.uC_DashBoard1.TabIndex = 0;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
             // 
             // Adminstrator
             // 
@@ -259,5 +276,8 @@ namespace PharmacyManagementMini
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private AdministratorUC.UC_DashBoard uC_DashBoard1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private AdministratorUC.UC_AddUser uC_AddUser1;
     }
 }
+

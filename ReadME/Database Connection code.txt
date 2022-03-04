@@ -1,0 +1,45 @@
+// connection string
+Data Source=DESKTOP-Q684RHH;initial catalog=Pharmacy;uid=sa; password=sa123
+
+
+//Opening Connection
+ protected SqlConnection getConnection()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=DESKTOP-Q684RHH;initial catalog=Pharmacy;uid=sa; password=sa123";
+            return con;
+        }
+
+
+//Getting Data
+ public DataSet getData(String query)
+        {
+            SqlConnection con = getConnection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = query;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
+
+
+
+//Setting Data
+public void setData(String query, String msg)
+        {
+            SqlConnection con = getConnection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            con.Open();
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show(msg,"Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+
+
+
+

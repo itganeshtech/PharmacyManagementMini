@@ -1,0 +1,23 @@
+//Pharmacy database
+create database Pharmacy;
+
+
+create table users(
+id int identity(1,1) primary key,
+userRole varchar(50) not null,
+name varchar(250) not null,
+dob varchar(250) not null,
+mobile bigint not null,
+email varchar(250) not null,
+username varchar(250) unique not null,
+pass varchar(250) not null
+)
+
+INSERT INTO dbo.users(userRole,name, dob, mobile, email, username, pass)
+VALUES ('Pharmacist', 'kumar', '1988-08-10', '9087875456','kumar@gmail.co','ku','ku')
+
+INSERT INTO dbo.users(userRole,name, dob, mobile, email, username, pass)
+VALUES ('Administrator', 'btech days', '2008-11-11', '2387675456','admin@gmail.co','btechdays','btechdays')
+
+INSERT INTO dbo.users(userRole,name, dob, mobile, email, username, pass)
+VALUES ('Pharmacist', 'Rohan', '1978-11-11', '8667675456','rohan@gmail.co','ra','ra')

@@ -52,6 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministratorUC\TestControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdministratorUC\TestControl1.Designer.cs">
+      <DependentUpon>TestControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorUC\UC_AddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdministratorUC\UC_AddUser.Designer.cs">
+      <DependentUpon>UC_AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorUC\UC_DashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -70,8 +82,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdministratorUC\TestControl1.resx">
+      <DependentUpon>TestControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministratorUC\UC_AddUser.resx">
+      <DependentUpon>UC_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdministratorUC\UC_DashBoard.resx">
       <DependentUpon>UC_DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +122,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ReadME\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

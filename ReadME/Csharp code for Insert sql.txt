@@ -1,0 +1,20 @@
+public void btnSignup_Click(object sender, EventArgs e)
+        {
+            String role=txtUserRole.Text;
+            String name=txtName.Text;
+            String dob=txtDob.Text;
+            Int64 mobile=Int64.Parse(txtMobileno.Text);
+            String email=txtEmail.Text;
+            String username=txtUsername.Text;
+            String pass=txtPassword.Text;
+            try
+            {
+                query = "INSERT INTO users(userRole,name, dob, mobile, email, username, pass) values('"+role+"', '"+name+"', '"+dob+"', '"+mobile+"', '"+email+"', '"+username+"', '"+pass+"')";
+                fn.setData(query,"Sign up successfull.");
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Username already exist","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+
+        }
