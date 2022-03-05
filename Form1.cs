@@ -42,10 +42,9 @@ namespace PharmacyManagementMini
             {
                 if (txtUserName.Text == "root" && txtPassword.Text == "root")
                 {
-                    Adminstrator admin = new Adminstrator();
+                    Adminstrator admin = new Adminstrator(txtUserName.Text);
                     admin.Show();
                     this.Hide();
-
                 }
             }
             else
@@ -58,7 +57,7 @@ namespace PharmacyManagementMini
 
                     if (role == "Administrator")
                     {
-                        Adminstrator admin = new Adminstrator();
+                        Adminstrator admin = new Adminstrator(txtUserName.Text);
                         admin.Show();
                         this.Hide();
 
@@ -76,14 +75,6 @@ namespace PharmacyManagementMini
                 }
 
             }
-
-
-
-
-
-
-
-
 
                 //SAMPLE CODE FOR HARD CODED USER NAME AND PASSWORD
                 //if(txtUserName.Text=="aa" && txtPassword.Text=="aa")

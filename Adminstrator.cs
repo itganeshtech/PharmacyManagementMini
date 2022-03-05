@@ -13,9 +13,21 @@ namespace PharmacyManagementMini
 {
     public partial class Adminstrator : Form
     {
+        String user = "";
         public Adminstrator()
         {
             InitializeComponent();
+        }
+        public String ID
+        {
+            get { return user.ToString(); }
+        }
+        public Adminstrator(String username)
+        {
+            InitializeComponent();
+            userNameLabel.Text = username;
+            user = username;
+            uC_ViewUser1.ID = ID;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -42,8 +54,10 @@ namespace PharmacyManagementMini
             uC_AddUser1.BringToFront();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void btnViewUser_Click(object sender, EventArgs e)
         {
+            uC_ViewUser1.Visible = true;
+            uC_ViewUser1.BringToFront();
 
         }
 
@@ -51,7 +65,13 @@ namespace PharmacyManagementMini
         {
             uC_DashBoard1.Visible = false;
             uC_AddUser1.Visible = false;
+            uC_ViewUser1.Visible = true;
             btnDashboard.PerformClick();        
+        }
+
+        private void uC_ViewUser1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -32,19 +32,21 @@ namespace PharmacyManagementMini
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adminstrator));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.userNameLabel = new System.Windows.Forms.Label();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnViewUser = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_AddUser1 = new PharmacyManagementMini.AdministratorUC.UC_AddUser();
-            this.uC_DashBoard1 = new PharmacyManagementMini.AdministratorUC.UC_DashBoard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_ViewUser1 = new PharmacyManagementMini.AdministratorUC.UC_ViewUser();
+            this.uC_AddUser1 = new PharmacyManagementMini.AdministratorUC.UC_AddUser();
+            this.uC_DashBoard1 = new PharmacyManagementMini.AdministratorUC.UC_DashBoard();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -53,10 +55,10 @@ namespace PharmacyManagementMini
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.userNameLabel);
             this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.guna2Button4);
-            this.panel1.Controls.Add(this.guna2Button3);
+            this.panel1.Controls.Add(this.btnViewUser);
             this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.label1);
@@ -66,16 +68,16 @@ namespace PharmacyManagementMini
             this.panel1.Size = new System.Drawing.Size(275, 770);
             this.panel1.TabIndex = 0;
             // 
-            // label2
+            // userNameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(106, 610);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 29);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Btechdays";
+            this.userNameLabel.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.userNameLabel.Location = new System.Drawing.Point(106, 610);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(115, 29);
+            this.userNameLabel.TabIndex = 5;
+            this.userNameLabel.Text = "Btechdays";
+            this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLogOut
             // 
@@ -118,26 +120,26 @@ namespace PharmacyManagementMini
             this.guna2Button4.TabIndex = 3;
             this.guna2Button4.Text = "Profile";
             // 
-            // guna2Button3
+            // btnViewUser
             // 
-            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button3.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(48, 393);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(227, 45);
-            this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = "View User";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btnViewUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnViewUser.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnViewUser.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btnViewUser.CheckedState.Parent = this.btnViewUser;
+            this.btnViewUser.CustomImages.Parent = this.btnViewUser;
+            this.btnViewUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnViewUser.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnViewUser.ForeColor = System.Drawing.Color.White;
+            this.btnViewUser.HoverState.Parent = this.btnViewUser;
+            this.btnViewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnViewUser.Image")));
+            this.btnViewUser.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnViewUser.Location = new System.Drawing.Point(48, 393);
+            this.btnViewUser.Name = "btnViewUser";
+            this.btnViewUser.ShadowDecoration.Parent = this.btnViewUser;
+            this.btnViewUser.Size = new System.Drawing.Size(227, 45);
+            this.btnViewUser.TabIndex = 2;
+            this.btnViewUser.Text = "View User";
+            this.btnViewUser.Click += new System.EventHandler(this.btnViewUser_Click);
             // 
             // guna2Button2
             // 
@@ -205,6 +207,7 @@ namespace PharmacyManagementMini
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uC_ViewUser1);
             this.panel2.Controls.Add(this.uC_AddUser1);
             this.panel2.Controls.Add(this.uC_DashBoard1);
             this.panel2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,6 +215,27 @@ namespace PharmacyManagementMini
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1089, 770);
             this.panel2.TabIndex = 1;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // uC_ViewUser1
+            // 
+            this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
+            this.uC_ViewUser1.Location = new System.Drawing.Point(0, 0);
+            this.uC_ViewUser1.Name = "uC_ViewUser1";
+            this.uC_ViewUser1.Size = new System.Drawing.Size(1089, 770);
+            this.uC_ViewUser1.TabIndex = 2;
+            this.uC_ViewUser1.Load += new System.EventHandler(this.uC_ViewUser1_Load);
             // 
             // uC_AddUser1
             // 
@@ -232,14 +256,6 @@ namespace PharmacyManagementMini
             this.uC_DashBoard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.uC_DashBoard1.Size = new System.Drawing.Size(1089, 770);
             this.uC_DashBoard1.TabIndex = 0;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
             // 
             // Adminstrator
             // 
@@ -269,15 +285,17 @@ namespace PharmacyManagementMini
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnViewUser;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label userNameLabel;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private AdministratorUC.UC_DashBoard uC_DashBoard1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private AdministratorUC.UC_AddUser uC_AddUser1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private AdministratorUC.UC_ViewUser uC_ViewUser1;
     }
 }
 
