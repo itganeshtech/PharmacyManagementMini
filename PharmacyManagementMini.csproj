@@ -96,11 +96,35 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="function.cs" />
+    <Compile Include="PharmacistUC\UC_P_AddMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_AddMedicine.Designer.cs">
+      <DependentUpon>UC_P_AddMedicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="PharmacistUC\UC_P_Dashbord.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PharmacistUC\UC_P_Dashbord.Designer.cs">
       <DependentUpon>UC_P_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_SellMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_SellMedicine.Designer.cs">
+      <DependentUpon>UC_P_SellMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_UpdateMedicine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_UpdateMedicine.Designer.cs">
+      <DependentUpon>UC_P_UpdateMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_ViewMedicines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_ViewMedicines.Designer.cs">
+      <DependentUpon>UC_P_ViewMedicines.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,6 +133,12 @@
     </Compile>
     <Compile Include="Pharmacist.Designer.cs">
       <DependentUpon>Pharmacist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_MedicineValidityCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_MedicineValidityCheck.Designer.cs">
+      <DependentUpon>UC_P_MedicineValidityCheck.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdministratorUC\TestControl1.resx">
       <DependentUpon>TestControl1.cs</DependentUpon>
@@ -131,8 +161,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistUC\UC_P_AddMedicine.resx">
+      <DependentUpon>UC_P_AddMedicine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PharmacistUC\UC_P_Dashbord.resx">
       <DependentUpon>UC_P_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistUC\UC_P_SellMedicine.resx">
+      <DependentUpon>UC_P_SellMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistUC\UC_P_UpdateMedicine.resx">
+      <DependentUpon>UC_P_UpdateMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistUC\UC_P_ViewMedicines.resx">
+      <DependentUpon>UC_P_ViewMedicines.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -145,6 +187,9 @@
     </Compile>
     <EmbeddedResource Include="Pharmacist.resx">
       <DependentUpon>Pharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistUC\UC_P_MedicineValidityCheck.resx">
+      <DependentUpon>UC_P_MedicineValidityCheck.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -321,6 +321,7 @@ namespace PharmacyManagementMini.AdministratorUC
             this.btnSignup.HoverState.FillColor = System.Drawing.Color.White;
             this.btnSignup.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnSignup.HoverState.Parent = this.btnSignup;
+            this.btnSignup.Image = ((System.Drawing.Image)(resources.GetObject("btnSignup.Image")));
             this.btnSignup.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSignup.Location = new System.Drawing.Point(571, 433);
             this.btnSignup.Name = "btnSignup";

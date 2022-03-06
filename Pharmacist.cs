@@ -19,12 +19,58 @@ namespace PharmacyManagementMini
 
         private void btnDashBord_Click(object sender, EventArgs e)
         {
-           
+            uC_P_Dashbord1.Visible = true;
+            uC_P_Dashbord1.BringToFront();
         }
 
-        private void TesterForm_Load(object sender, EventArgs e)
+        
+        private void btnAddMedicine_Click(object sender, EventArgs e)
         {
+            uC_P_AddMedicine1.Visible = true;
+            uC_P_AddMedicine1.BringToFront();
+
+        }
+
+        private void Pharmacist_Load(object sender, EventArgs e)
+        {
+            uC_P_Dashbord1.Visible = false;
+            uC_P_AddMedicine1.Visible = false;
+            uC_P_ViewMedicines1.Visible = false;
+            uC_P_UpdateMedicine1.Visible = false;
+            uC_P_MedicineValidityCheck1.Visible = false;
+            uC_P_SellMedicine1.Visible = false;
             btnDashBord.PerformClick();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.Show();
+            this.Hide();
+        }
+
+        private void btnViewMedicine_Click(object sender, EventArgs e)
+        {
+            uC_P_ViewMedicines1.Visible = true;
+            uC_P_ViewMedicines1.BringToFront();
+        }
+
+        private void btnModifyMedicine_Click(object sender, EventArgs e)
+        {
+            uC_P_UpdateMedicine1.Visible = true;
+            uC_P_UpdateMedicine1.BringToFront();
+        }
+
+        private void btnMedValidityCheck_Click(object sender, EventArgs e)
+        {
+            uC_P_MedicineValidityCheck1.Visible = true;
+            uC_P_MedicineValidityCheck1.BringToFront();
+        }
+
+        private void btnSellMedicine_Click(object sender, EventArgs e)
+        {
+            uC_P_SellMedicine1.Visible = true;
+            uC_P_SellMedicine1.BringToFront();
         }
     }
 }
