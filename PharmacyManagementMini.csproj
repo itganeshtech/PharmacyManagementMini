@@ -96,12 +96,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="function.cs" />
-    <Compile Include="Pharmacist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pharmacist.Designer.cs">
-      <DependentUpon>Pharmacist.cs</DependentUpon>
-    </Compile>
     <Compile Include="PharmacistUC\UC_P_Dashbord.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,11 +104,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TesterForm.cs">
+    <Compile Include="Pharmacist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TesterForm.Designer.cs">
-      <DependentUpon>TesterForm.cs</DependentUpon>
+    <Compile Include="Pharmacist.Designer.cs">
+      <DependentUpon>Pharmacist.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdministratorUC\TestControl1.resx">
       <DependentUpon>TestControl1.cs</DependentUpon>
@@ -137,9 +131,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pharmacist.resx">
-      <DependentUpon>Pharmacist.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PharmacistUC\UC_P_Dashbord.resx">
       <DependentUpon>UC_P_Dashbord.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,8 +143,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TesterForm.resx">
-      <DependentUpon>TesterForm.cs</DependentUpon>
+    <EmbeddedResource Include="Pharmacist.resx">
+      <DependentUpon>Pharmacist.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

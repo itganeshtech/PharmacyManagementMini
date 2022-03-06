@@ -12,22 +12,19 @@ namespace PharmacyManagementMini
 {
     public partial class Pharmacist : Form
     {
-       
-        private void btnLogOut_Click(object sender, EventArgs e)
+        public Pharmacist()
         {
-            Form1 fm = new Form1();
-            fm.Show();
-            this.Hide();
+            InitializeComponent();
         }
 
         private void btnDashBord_Click(object sender, EventArgs e)
         {
-            
+           
         }
 
-        private void Pharmacist_Load(object sender, EventArgs e)
+        private void TesterForm_Load(object sender, EventArgs e)
         {
-            
+            btnDashBord.PerformClick();
         }
     }
 }

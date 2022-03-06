@@ -29,6 +29,7 @@ namespace PharmacyManagementMini
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pharmacist));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
@@ -40,9 +41,12 @@ namespace PharmacyManagementMini
             this.btnDashBord = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_P_Dashbord1 = new PharmacyManagementMini.PharmacistUC.UC_P_Dashbord();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,10 +62,10 @@ namespace PharmacyManagementMini
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(1, -1);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 720);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(275, 733);
+            this.panel1.TabIndex = 1;
             // 
             // btnLogOut
             // 
@@ -82,7 +86,6 @@ namespace PharmacyManagementMini
             this.btnLogOut.Size = new System.Drawing.Size(227, 45);
             this.btnLogOut.TabIndex = 9;
             this.btnLogOut.Text = "Log Out";
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // guna2Button6
             // 
@@ -225,28 +228,41 @@ namespace PharmacyManagementMini
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(275, 1);
+            this.panel2.Controls.Add(this.uC_P_Dashbord1);
+            this.panel2.Location = new System.Drawing.Point(277, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1067, 720);
-            this.panel2.TabIndex = 1;
+            this.panel2.Size = new System.Drawing.Size(1089, 770);
+            this.panel2.TabIndex = 2;
             // 
-            // Pharmacist
+            // uC_P_Dashbord1
+            // 
+            this.uC_P_Dashbord1.BackColor = System.Drawing.Color.White;
+            this.uC_P_Dashbord1.Location = new System.Drawing.Point(0, -1);
+            this.uC_P_Dashbord1.Name = "uC_P_Dashbord1";
+            this.uC_P_Dashbord1.Size = new System.Drawing.Size(1089, 733);
+            this.uC_P_Dashbord1.TabIndex = 0;
+            // 
+            // TesterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1344, 729);
+            this.ClientSize = new System.Drawing.Size(1373, 731);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Pharmacist";
+            this.Name = "TesterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pharmacist";
-            this.Load += new System.EventHandler(this.Pharmacist_Load);
+            this.Text = "TesterForm";
+            this.Load += new System.EventHandler(this.TesterForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -254,15 +270,17 @@ namespace PharmacyManagementMini
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnDashBord;
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnDashBord;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Panel panel2;
+        private PharmacistUC.UC_P_Dashbord uC_P_Dashbord1;
     }
 }
