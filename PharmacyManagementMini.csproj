@@ -41,6 +41,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -101,8 +102,20 @@
     <Compile Include="Pharmacist.Designer.cs">
       <DependentUpon>Pharmacist.cs</DependentUpon>
     </Compile>
+    <Compile Include="PharmacistUC\UC_P_Dashbord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PharmacistUC\UC_P_Dashbord.Designer.cs">
+      <DependentUpon>UC_P_Dashbord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesterForm.Designer.cs">
+      <DependentUpon>TesterForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdministratorUC\TestControl1.resx">
       <DependentUpon>TestControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +137,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist.resx">
+      <DependentUpon>Pharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacistUC\UC_P_Dashbord.resx">
+      <DependentUpon>UC_P_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -133,6 +152,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TesterForm.resx">
+      <DependentUpon>TesterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

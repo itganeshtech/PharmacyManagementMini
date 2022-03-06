@@ -66,8 +66,8 @@ namespace PharmacyManagementMini
         {
             uC_DashBoard1.Visible = false;
             uC_AddUser1.Visible = false;
-            uC_ViewUser1.Visible = true;
-            uC_Profiles1.Visible = true;
+            uC_ViewUser1.Visible = false;
+            uC_Profiles1.Visible = false;
             btnDashboard.PerformClick();        
         }
 

@@ -60,9 +60,13 @@ namespace PharmacyManagementMini
                     }
                     else if (role == "Pharmacist")
                     {
-                        Pharmacist pharm = new Pharmacist();
-                        pharm.Show();
+                        Pharmacist ps = new Pharmacist();
+                        ps.Show();
                         this.Hide();
+
+                        //testerform ts = new testerform();
+                        //ts.show();
+                        //this.hide();
                     }
                 }
                 else

@@ -183,7 +183,7 @@ namespace PharmacyManagementMini
             this.btnDashboard.ShadowDecoration.Parent = this.btnDashboard;
             this.btnDashboard.Size = new System.Drawing.Size(227, 45);
             this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.Text = "Dashbord";
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // label1
@@ -191,7 +191,7 @@ namespace PharmacyManagementMini
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(41, 204);
+            this.label1.Location = new System.Drawing.Point(52, 204);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 39);
             this.label1.TabIndex = 0;
@@ -200,7 +200,7 @@ namespace PharmacyManagementMini
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(48, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(63, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(183, 173);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,7 +247,7 @@ namespace PharmacyManagementMini
             // uC_ViewUser1
             // 
             this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
-            this.uC_ViewUser1.Location = new System.Drawing.Point(0, 0);
+            this.uC_ViewUser1.Location = new System.Drawing.Point(-3, 0);
             this.uC_ViewUser1.Name = "uC_ViewUser1";
             this.uC_ViewUser1.Size = new System.Drawing.Size(1089, 770);
             this.uC_ViewUser1.TabIndex = 2;
@@ -258,7 +258,7 @@ namespace PharmacyManagementMini
             this.uC_AddUser1.BackColor = System.Drawing.Color.White;
             this.uC_AddUser1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uC_AddUser1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.uC_AddUser1.Location = new System.Drawing.Point(0, 3);
+            this.uC_AddUser1.Location = new System.Drawing.Point(-3, 0);
             this.uC_AddUser1.Name = "uC_AddUser1";
             this.uC_AddUser1.Size = new System.Drawing.Size(1089, 770);
             this.uC_AddUser1.TabIndex = 1;
@@ -267,7 +267,7 @@ namespace PharmacyManagementMini
             // 
             this.uC_DashBoard1.AutoSize = true;
             this.uC_DashBoard1.BackColor = System.Drawing.Color.White;
-            this.uC_DashBoard1.Location = new System.Drawing.Point(0, 2);
+            this.uC_DashBoard1.Location = new System.Drawing.Point(-3, 0);
             this.uC_DashBoard1.Name = "uC_DashBoard1";
             this.uC_DashBoard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.uC_DashBoard1.Size = new System.Drawing.Size(1089, 770);
