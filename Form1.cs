@@ -18,17 +18,13 @@ namespace PharmacyManagementMini
         public Form1()
         {
             InitializeComponent();
-        }
-
-        
-
+        }              
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtUserName.Clear();
             txtPassword.Clear();
 
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();

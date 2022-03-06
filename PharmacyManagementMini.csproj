@@ -70,6 +70,12 @@
     <Compile Include="AdministratorUC\UC_DashBoard.Designer.cs">
       <DependentUpon>UC_DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdministratorUC\UC_Profiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdministratorUC\UC_Profiles.Designer.cs">
+      <DependentUpon>UC_Profiles.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorUC\UC_ViewUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdministratorUC\UC_DashBoard.resx">
       <DependentUpon>UC_DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministratorUC\UC_Profiles.resx">
+      <DependentUpon>UC_Profiles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdministratorUC\UC_ViewUser.resx">
       <DependentUpon>UC_ViewUser.cs</DependentUpon>
