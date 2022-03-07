@@ -308,6 +308,7 @@ namespace PharmacyManagementMini.PharmacistUC
             this.btnReset.Size = new System.Drawing.Size(110, 41);
             this.btnReset.TabIndex = 21;
             this.btnReset.Text = "Reset";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnAdd
             // 
