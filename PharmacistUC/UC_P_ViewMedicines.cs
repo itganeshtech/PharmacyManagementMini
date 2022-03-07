@@ -9,9 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PharmacyManagementMini.PharmacistUC
-{
-    
-
+{  
     public partial class UC_P_ViewMedicines : UserControl
     {
         function fn = new function();
@@ -62,10 +60,7 @@ namespace PharmacyManagementMini.PharmacistUC
                 fn.setData(query,"Medicine Record Deleted.");
                 UC_P_ViewMedicines_Load(this, null);
             }
-
-
         }
-
         private void btnSync_Click(object sender, EventArgs e)
         {
             UC_P_ViewMedicines_Load(this, null);

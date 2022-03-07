@@ -43,17 +43,17 @@ namespace PharmacyManagementMini
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_P_SellMedicine1 = new PharmacyManagementMini.PharmacistUC.UC_P_SellMedicine();
             this.uC_P_MedicineValidityCheck1 = new PharmacyManagementMini.UC_P_MedicineValidityCheck();
             this.uC_P_UpdateMedicine1 = new PharmacyManagementMini.PharmacistUC.UC_P_UpdateMedicine();
             this.uC_P_ViewMedicines1 = new PharmacyManagementMini.PharmacistUC.UC_P_ViewMedicines();
             this.uC_P_AddMedicine1 = new PharmacyManagementMini.PharmacistUC.UC_P_AddMedicine();
             this.uC_P_Dashbord1 = new PharmacyManagementMini.PharmacistUC.UC_P_Dashbord();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,17 +80,17 @@ namespace PharmacyManagementMini
             // btnLogOut
             // 
             this.btnLogOut.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnLogOut.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnLogOut.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.CheckedState.Parent = this.btnLogOut;
             this.btnLogOut.CustomImages.Parent = this.btnLogOut;
             this.btnLogOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnLogOut.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnLogOut.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.HoverState.Parent = this.btnLogOut;
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLogOut.Location = new System.Drawing.Point(49, 570);
+            this.btnLogOut.Location = new System.Drawing.Point(48, 570);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.ShadowDecoration.Parent = this.btnLogOut;
             this.btnLogOut.Size = new System.Drawing.Size(227, 45);
@@ -101,17 +101,17 @@ namespace PharmacyManagementMini
             // btnSellMedicine
             // 
             this.btnSellMedicine.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnSellMedicine.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnSellMedicine.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnSellMedicine.CheckedState.Parent = this.btnSellMedicine;
             this.btnSellMedicine.CustomImages.Parent = this.btnSellMedicine;
             this.btnSellMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnSellMedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSellMedicine.ForeColor = System.Drawing.Color.White;
-            this.btnSellMedicine.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnSellMedicine.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnSellMedicine.HoverState.Parent = this.btnSellMedicine;
             this.btnSellMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnSellMedicine.Image")));
             this.btnSellMedicine.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnSellMedicine.Location = new System.Drawing.Point(49, 518);
+            this.btnSellMedicine.Location = new System.Drawing.Point(48, 518);
             this.btnSellMedicine.Name = "btnSellMedicine";
             this.btnSellMedicine.ShadowDecoration.Parent = this.btnSellMedicine;
             this.btnSellMedicine.Size = new System.Drawing.Size(227, 45);
@@ -122,20 +122,20 @@ namespace PharmacyManagementMini
             // btnMedValidityCheck
             // 
             this.btnMedValidityCheck.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMedValidityCheck.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnMedValidityCheck.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnMedValidityCheck.CheckedState.Parent = this.btnMedValidityCheck;
             this.btnMedValidityCheck.CustomImages.Parent = this.btnMedValidityCheck;
             this.btnMedValidityCheck.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnMedValidityCheck.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMedValidityCheck.ForeColor = System.Drawing.Color.White;
-            this.btnMedValidityCheck.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnMedValidityCheck.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnMedValidityCheck.HoverState.Parent = this.btnMedValidityCheck;
             this.btnMedValidityCheck.Image = ((System.Drawing.Image)(resources.GetObject("btnMedValidityCheck.Image")));
             this.btnMedValidityCheck.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMedValidityCheck.Location = new System.Drawing.Point(49, 467);
+            this.btnMedValidityCheck.Location = new System.Drawing.Point(35, 467);
             this.btnMedValidityCheck.Name = "btnMedValidityCheck";
             this.btnMedValidityCheck.ShadowDecoration.Parent = this.btnMedValidityCheck;
-            this.btnMedValidityCheck.Size = new System.Drawing.Size(227, 45);
+            this.btnMedValidityCheck.Size = new System.Drawing.Size(240, 45);
             this.btnMedValidityCheck.TabIndex = 7;
             this.btnMedValidityCheck.Text = "Medicine Velidity Check";
             this.btnMedValidityCheck.Click += new System.EventHandler(this.btnMedValidityCheck_Click);
@@ -143,17 +143,17 @@ namespace PharmacyManagementMini
             // btnModifyMedicine
             // 
             this.btnModifyMedicine.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnModifyMedicine.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnModifyMedicine.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnModifyMedicine.CheckedState.Parent = this.btnModifyMedicine;
             this.btnModifyMedicine.CustomImages.Parent = this.btnModifyMedicine;
             this.btnModifyMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnModifyMedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModifyMedicine.ForeColor = System.Drawing.Color.White;
-            this.btnModifyMedicine.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnModifyMedicine.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnModifyMedicine.HoverState.Parent = this.btnModifyMedicine;
             this.btnModifyMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnModifyMedicine.Image")));
             this.btnModifyMedicine.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnModifyMedicine.Location = new System.Drawing.Point(49, 417);
+            this.btnModifyMedicine.Location = new System.Drawing.Point(48, 417);
             this.btnModifyMedicine.Name = "btnModifyMedicine";
             this.btnModifyMedicine.ShadowDecoration.Parent = this.btnModifyMedicine;
             this.btnModifyMedicine.Size = new System.Drawing.Size(227, 45);
@@ -164,17 +164,17 @@ namespace PharmacyManagementMini
             // btnViewMedicine
             // 
             this.btnViewMedicine.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnViewMedicine.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnViewMedicine.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnViewMedicine.CheckedState.Parent = this.btnViewMedicine;
             this.btnViewMedicine.CustomImages.Parent = this.btnViewMedicine;
             this.btnViewMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnViewMedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewMedicine.ForeColor = System.Drawing.Color.White;
-            this.btnViewMedicine.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnViewMedicine.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnViewMedicine.HoverState.Parent = this.btnViewMedicine;
             this.btnViewMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnViewMedicine.Image")));
             this.btnViewMedicine.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnViewMedicine.Location = new System.Drawing.Point(49, 367);
+            this.btnViewMedicine.Location = new System.Drawing.Point(48, 367);
             this.btnViewMedicine.Name = "btnViewMedicine";
             this.btnViewMedicine.ShadowDecoration.Parent = this.btnViewMedicine;
             this.btnViewMedicine.Size = new System.Drawing.Size(227, 45);
@@ -185,17 +185,17 @@ namespace PharmacyManagementMini
             // btnAddMedicine
             // 
             this.btnAddMedicine.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnAddMedicine.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnAddMedicine.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnAddMedicine.CheckedState.Parent = this.btnAddMedicine;
             this.btnAddMedicine.CustomImages.Parent = this.btnAddMedicine;
             this.btnAddMedicine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnAddMedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMedicine.ForeColor = System.Drawing.Color.White;
-            this.btnAddMedicine.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnAddMedicine.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnAddMedicine.HoverState.Parent = this.btnAddMedicine;
             this.btnAddMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMedicine.Image")));
             this.btnAddMedicine.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddMedicine.Location = new System.Drawing.Point(49, 316);
+            this.btnAddMedicine.Location = new System.Drawing.Point(48, 316);
             this.btnAddMedicine.Name = "btnAddMedicine";
             this.btnAddMedicine.ShadowDecoration.Parent = this.btnAddMedicine;
             this.btnAddMedicine.Size = new System.Drawing.Size(227, 45);
@@ -206,20 +206,20 @@ namespace PharmacyManagementMini
             // btnDashBord
             // 
             this.btnDashBord.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnDashBord.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnDashBord.CheckedState.ForeColor = System.Drawing.Color.Black;
             this.btnDashBord.CheckedState.Parent = this.btnDashBord;
             this.btnDashBord.CustomImages.Parent = this.btnDashBord;
             this.btnDashBord.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnDashBord.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashBord.ForeColor = System.Drawing.Color.White;
-            this.btnDashBord.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnDashBord.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnDashBord.HoverState.Parent = this.btnDashBord;
             this.btnDashBord.Image = ((System.Drawing.Image)(resources.GetObject("btnDashBord.Image")));
             this.btnDashBord.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDashBord.Location = new System.Drawing.Point(49, 265);
+            this.btnDashBord.Location = new System.Drawing.Point(48, 265);
             this.btnDashBord.Name = "btnDashBord";
             this.btnDashBord.ShadowDecoration.Parent = this.btnDashBord;
-            this.btnDashBord.Size = new System.Drawing.Size(227, 45);
+            this.btnDashBord.Size = new System.Drawing.Size(227, 46);
             this.btnDashBord.TabIndex = 3;
             this.btnDashBord.Text = "Dashbord";
             this.btnDashBord.Click += new System.EventHandler(this.btnDashBord_Click);
@@ -260,6 +260,26 @@ namespace PharmacyManagementMini
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1098, 770);
             this.panel2.TabIndex = 2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.TargetControl = this.panel2;
             // 
             // uC_P_SellMedicine1
             // 
@@ -308,26 +328,6 @@ namespace PharmacyManagementMini
             this.uC_P_Dashbord1.Name = "uC_P_Dashbord1";
             this.uC_P_Dashbord1.Size = new System.Drawing.Size(1089, 733);
             this.uC_P_Dashbord1.TabIndex = 0;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this.panel2;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.TargetControl = this.panel2;
-            // 
-            // guna2Elipse6
-            // 
-            this.guna2Elipse6.TargetControl = this.panel2;
             // 
             // Pharmacist
             // 

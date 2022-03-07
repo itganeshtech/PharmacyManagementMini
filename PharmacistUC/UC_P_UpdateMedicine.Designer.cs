@@ -335,6 +335,7 @@ namespace PharmacyManagementMini.PharmacistUC
             this.btnUpdate.Size = new System.Drawing.Size(146, 48);
             this.btnUpdate.TabIndex = 34;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSearch
             // 
@@ -358,6 +359,7 @@ namespace PharmacyManagementMini.PharmacistUC
             this.btnSearch.Size = new System.Drawing.Size(146, 40);
             this.btnSearch.TabIndex = 36;
             this.btnSearch.Text = "Search";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // label9
             // 
@@ -388,6 +390,7 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtAddQuan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddQuan.HoverState.Parent = this.txtAddQuan;
             this.txtAddQuan.Location = new System.Drawing.Point(837, 274);
+            this.txtAddQuan.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtAddQuan.Name = "txtAddQuan";
             this.txtAddQuan.PasswordChar = '\0';
             this.txtAddQuan.PlaceholderText = "";
@@ -428,6 +431,7 @@ namespace PharmacyManagementMini.PharmacistUC
             this.Controls.Add(this.label1);
             this.Name = "UC_P_UpdateMedicine";
             this.Size = new System.Drawing.Size(1089, 720);
+            this.Load += new System.EventHandler(this.UC_P_UpdateMedicine_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

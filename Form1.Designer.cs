@@ -37,11 +37,11 @@ namespace PharmacyManagementMini
             this.label3 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnSign = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReset = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSign = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -116,42 +116,6 @@ namespace PharmacyManagementMini
             this.txtPassword.Size = new System.Drawing.Size(285, 26);
             this.txtPassword.TabIndex = 4;
             // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.White;
-            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1303, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(35, 35);
-            this.btnExit.TabIndex = 7;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnSign
-            // 
-            this.btnSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSign.Location = new System.Drawing.Point(675, 432);
-            this.btnSign.Name = "btnSign";
-            this.btnSign.Size = new System.Drawing.Size(97, 36);
-            this.btnSign.TabIndex = 5;
-            this.btnSign.Text = "Sign In";
-            this.btnSign.UseVisualStyleBackColor = true;
-            this.btnSign.Click += new System.EventHandler(this.btnSign_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(827, 432);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(111, 36);
-            this.btnReset.TabIndex = 6;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
@@ -171,17 +135,85 @@ namespace PharmacyManagementMini
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnExit.CheckedState.Parent = this.btnExit;
+            this.btnExit.CustomImages.Parent = this.btnExit;
+            this.btnExit.FillColor = System.Drawing.Color.White;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnExit.HoverState.Parent = this.btnExit;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnExit.Location = new System.Drawing.Point(1320, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.PressedColor = System.Drawing.Color.Transparent;
+            this.btnExit.ShadowDecoration.Parent = this.btnExit;
+            this.btnExit.Size = new System.Drawing.Size(39, 41);
+            this.btnExit.TabIndex = 19;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            // 
+            // btnReset
+            // 
+            this.btnReset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnReset.BorderRadius = 21;
+            this.btnReset.BorderThickness = 1;
+            this.btnReset.CheckedState.Parent = this.btnReset;
+            this.btnReset.CustomImages.Parent = this.btnReset;
+            this.btnReset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnReset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnReset.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnReset.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnReset.HoverState.Parent = this.btnReset;
+            this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
+            this.btnReset.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnReset.Location = new System.Drawing.Point(806, 423);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.ShadowDecoration.Parent = this.btnReset;
+            this.btnReset.Size = new System.Drawing.Size(146, 38);
+            this.btnReset.TabIndex = 37;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // btnSign
+            // 
+            this.btnSign.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnSign.BorderRadius = 21;
+            this.btnSign.BorderThickness = 1;
+            this.btnSign.CheckedState.Parent = this.btnSign;
+            this.btnSign.CustomImages.Parent = this.btnSign;
+            this.btnSign.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnSign.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSign.ForeColor = System.Drawing.Color.White;
+            this.btnSign.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnSign.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnSign.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnSign.HoverState.Parent = this.btnSign;
+            this.btnSign.Image = ((System.Drawing.Image)(resources.GetObject("btnSign.Image")));
+            this.btnSign.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSign.Location = new System.Drawing.Point(645, 423);
+            this.btnSign.Name = "btnSign";
+            this.btnSign.ShadowDecoration.Parent = this.btnSign;
+            this.btnSign.Size = new System.Drawing.Size(146, 38);
+            this.btnSign.TabIndex = 36;
+            this.btnSign.Text = "Sign In";
+            this.btnSign.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1380, 768);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSign);
             this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label3);
@@ -209,11 +241,11 @@ namespace PharmacyManagementMini
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnSign;
-        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
+        private Guna.UI2.WinForms.Guna2Button btnReset;
+        private Guna.UI2.WinForms.Guna2Button btnSign;
     }
 }
 

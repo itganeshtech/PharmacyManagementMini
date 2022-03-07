@@ -19,18 +19,20 @@ namespace PharmacyManagementMini
         {
             InitializeComponent();
         }              
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            txtUserName.Clear();
-            txtPassword.Clear();
+        
 
-        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnSign_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            txtUserName.Clear();
+            txtPassword.Clear();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
             query = "select * from users";
             ds = fn.getData(query);
@@ -76,18 +78,23 @@ namespace PharmacyManagementMini
 
             }
 
-                //SAMPLE CODE FOR HARD CODED USER NAME AND PASSWORD
-                //if(txtUserName.Text=="aa" && txtPassword.Text=="aa")
-                //{
-                //    Adminstrator am = new Adminstrator();
-                //    am.Show();
-                //    this.Hide();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Wrong Password or Username.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                //}
+            //SAMPLE CODE FOR HARD CODED USER NAME AND PASSWORD
+            //if(txtUserName.Text=="aa" && txtPassword.Text=="aa")
+            //{
+            //    Adminstrator am = new Adminstrator();
+            //    am.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Wrong Password or Username.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            //}
 
-            }
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
