@@ -173,9 +173,8 @@ namespace PharmacyManagementMini.PharmacistUC
             print.PrintDataGridView(guna2DataGridView1);
             totalAmount = 0;
             totalLabel.Text = "Rs. 00";
-            guna2DataGridView1.DataSource = 0;
-
-
+            guna2DataGridView1.DataSource = null;
+            guna2DataGridView1.Rows.Clear();
         }
         private void clearAll()
         {
