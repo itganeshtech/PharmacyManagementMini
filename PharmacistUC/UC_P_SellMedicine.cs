@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DGVPrinterHelper;
+using PharmacyManagementMini.Models;
 
 namespace PharmacyManagementMini.PharmacistUC
 {
@@ -16,10 +17,24 @@ namespace PharmacyManagementMini.PharmacistUC
         function fn = new function();
         String query;
         DataSet ds;
+        protected int n, totalAmount = 0;
+        protected Int64 quantity, newQuantity;
+        int valueAmount;
+        String valueId;
+        protected Int64 notOfunit;
+
+        BindingList<CartItem> Items;
+
         public UC_P_SellMedicine()
         {
             InitializeComponent();
+            Items = new BindingList<CartItem>();
+
+            guna2DataGridView1.DataSource = Items;
+            guna2DataGridView1.AutoGenerateColumns = true;
+            guna2DataGridView1.Refresh();
         }
+
         //mid,mname, mnumber, mDate, eDate, quantity, perunit
         private void UC_P_SellMedicine_Load(object sender, EventArgs e)
         {
@@ -58,7 +73,6 @@ namespace PharmacyManagementMini.PharmacistUC
             txtMediId.Text = ds.Tables[0].Rows[0][0].ToString();
             txtExpireDate.Text = ds.Tables[0].Rows[0][1].ToString();
             txtPricePerUnit.Text = ds.Tables[0].Rows[0][2].ToString();
-
         }
 
         private void txtNoOfUnits_TextChanged(object sender, EventArgs e)
@@ -75,10 +89,7 @@ namespace PharmacyManagementMini.PharmacistUC
                 txtTotalPrice.Clear();
             }
         }
-
-        protected int n, totalAmount = 0;
-        protected Int64 quantity, newQuantity;
-
+        
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
             if(txtMediId.Text!="")
@@ -89,13 +100,25 @@ namespace PharmacyManagementMini.PharmacistUC
                 newQuantity = quantity - Int64.Parse(txtNoOfUnits.Text);
                 if(newQuantity>=0)
                 {
-                    n = guna2DataGridView1.Rows.Add();
-                    guna2DataGridView1.Rows[n].Cells[0].Value = txtMediId.Text;
-                    guna2DataGridView1.Rows[n].Cells[1].Value = txtMediName.Text;
-                    guna2DataGridView1.Rows[n].Cells[2].Value = txtExpireDate.Text;
-                    guna2DataGridView1.Rows[n].Cells[3].Value = txtPricePerUnit.Text;
-                    guna2DataGridView1.Rows[n].Cells[4].Value = txtNoOfUnits.Text;
-                    guna2DataGridView1.Rows[n].Cells[5].Value = txtTotalPrice.Text;
+                    Items.Add(new CartItem()
+                    {
+                        MediId = txtMediId.Text.Trim(),
+                        MediName = txtMediName.Text.Trim(),
+                        ExpireDate = txtExpireDate.Text.Trim(),
+                        PricePerUnit = txtPricePerUnit.Text.Trim(),
+                        NoOfUnits = txtNoOfUnits.Text.Trim(),
+                        TotalPrice = txtTotalPrice.Text.Trim()
+                    });
+
+                    guna2DataGridView1.Refresh();
+
+                    //n = guna2DataGridView1.Rows.Add();
+                    //guna2DataGridView1.Rows[n].Cells[0].Value = txtMediId.Text;
+                    //guna2DataGridView1.Rows[n].Cells[1].Value = txtMediName.Text;
+                    //guna2DataGridView1.Rows[n].Cells[2].Value = txtExpireDate.Text;
+                    //guna2DataGridView1.Rows[n].Cells[3].Value = txtPricePerUnit.Text;
+                    //guna2DataGridView1.Rows[n].Cells[4].Value = txtNoOfUnits.Text;
+                    //guna2DataGridView1.Rows[n].Cells[5].Value = txtTotalPrice.Text;
 
                     totalAmount = totalAmount + int.Parse(txtTotalPrice.Text);
                     totalLabel.Text = "Rs. " + totalAmount.ToString();
@@ -107,6 +130,7 @@ namespace PharmacyManagementMini.PharmacistUC
                 {
                     MessageBox.Show("Medicine is out of Stock.\n Only "+ quantity+" is Left","Warning!!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
+
                 clearAll();
                 UC_P_SellMedicine_Load(this, null);
             }
@@ -115,9 +139,7 @@ namespace PharmacyManagementMini.PharmacistUC
                 MessageBox.Show("Select Medicine First", "information !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        int valueAmount;
-        String valueId;
-        protected Int64 notOfunit;
+       
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -173,8 +195,8 @@ namespace PharmacyManagementMini.PharmacistUC
             print.PrintDataGridView(guna2DataGridView1);
             totalAmount = 0;
             totalLabel.Text = "Rs. 00";
-            guna2DataGridView1.DataSource = null;
-            guna2DataGridView1.Rows.Clear();
+
+            Items.Clear();
         }
         private void clearAll()
         {
@@ -185,6 +207,5 @@ namespace PharmacyManagementMini.PharmacistUC
             txtPricePerUnit.Clear();
             txtTotalPrice.Clear();
         }
-
     }
 }

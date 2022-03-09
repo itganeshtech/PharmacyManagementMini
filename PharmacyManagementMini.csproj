@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\Desktop\MyTemp\GunaDll File\Guna.UI2.dll</HintPath>
+    <Reference Include="Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.1\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -97,6 +97,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="function.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="PharmacistUC\UC_P_AddMedicine.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -192,6 +193,7 @@
     <EmbeddedResource Include="PharmacistUC\UC_P_MedicineValidityCheck.resx">
       <DependentUpon>UC_P_MedicineValidityCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

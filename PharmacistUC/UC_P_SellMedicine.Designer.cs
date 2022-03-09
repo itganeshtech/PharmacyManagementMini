@@ -31,9 +31,9 @@ namespace PharmacyManagementMini.PharmacistUC
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_P_SellMedicine));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSync = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,12 +58,6 @@ namespace PharmacyManagementMini.PharmacistUC
             this.btnPurchasePrint = new Guna.UI2.WinForms.Guna2Button();
             this.totalLabel = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,29 +66,25 @@ namespace PharmacyManagementMini.PharmacistUC
             // 
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 38);
+            this.label1.Size = new System.Drawing.Size(204, 35);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sell Medicine";
             // 
             // btnSync
             // 
-            this.btnSync.CheckedState.Parent = this.btnSync;
             this.btnSync.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSync.CustomImages.Parent = this.btnSync;
             this.btnSync.FillColor = System.Drawing.Color.White;
             this.btnSync.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSync.ForeColor = System.Drawing.Color.White;
             this.btnSync.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnSync.HoverState.Parent = this.btnSync;
             this.btnSync.Image = ((System.Drawing.Image)(resources.GetObject("btnSync.Image")));
             this.btnSync.ImageSize = new System.Drawing.Size(35, 35);
             this.btnSync.Location = new System.Drawing.Point(264, 21);
             this.btnSync.Name = "btnSync";
             this.btnSync.PressedColor = System.Drawing.Color.White;
-            this.btnSync.ShadowDecoration.Parent = this.btnSync;
             this.btnSync.Size = new System.Drawing.Size(34, 35);
             this.btnSync.TabIndex = 7;
             this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
@@ -116,14 +106,11 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtPricePerUnit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPricePerUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPricePerUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPricePerUnit.DisabledState.Parent = this.txtPricePerUnit;
             this.txtPricePerUnit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPricePerUnit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPricePerUnit.FocusedState.Parent = this.txtPricePerUnit;
             this.txtPricePerUnit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPricePerUnit.ForeColor = System.Drawing.Color.Black;
             this.txtPricePerUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPricePerUnit.HoverState.Parent = this.txtPricePerUnit;
             this.txtPricePerUnit.Location = new System.Drawing.Point(733, 117);
             this.txtPricePerUnit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPricePerUnit.Name = "txtPricePerUnit";
@@ -131,7 +118,6 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtPricePerUnit.PlaceholderText = "";
             this.txtPricePerUnit.ReadOnly = true;
             this.txtPricePerUnit.SelectedText = "";
-            this.txtPricePerUnit.ShadowDecoration.Parent = this.txtPricePerUnit;
             this.txtPricePerUnit.Size = new System.Drawing.Size(261, 36);
             this.txtPricePerUnit.TabIndex = 23;
             // 
@@ -152,21 +138,17 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtTotalPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtTotalPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtTotalPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTotalPrice.DisabledState.Parent = this.txtTotalPrice;
             this.txtTotalPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTotalPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTotalPrice.FocusedState.Parent = this.txtTotalPrice;
             this.txtTotalPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalPrice.ForeColor = System.Drawing.Color.Black;
             this.txtTotalPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTotalPrice.HoverState.Parent = this.txtTotalPrice;
             this.txtTotalPrice.Location = new System.Drawing.Point(735, 301);
             this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.PasswordChar = '\0';
             this.txtTotalPrice.PlaceholderText = "";
             this.txtTotalPrice.SelectedText = "";
-            this.txtTotalPrice.ShadowDecoration.Parent = this.txtTotalPrice;
             this.txtTotalPrice.Size = new System.Drawing.Size(261, 36);
             this.txtTotalPrice.TabIndex = 21;
             // 
@@ -187,14 +169,11 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtMediName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtMediName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtMediName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMediName.DisabledState.Parent = this.txtMediName;
             this.txtMediName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMediName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMediName.FocusedState.Parent = this.txtMediName;
             this.txtMediName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMediName.ForeColor = System.Drawing.Color.Black;
             this.txtMediName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMediName.HoverState.Parent = this.txtMediName;
             this.txtMediName.Location = new System.Drawing.Point(290, 224);
             this.txtMediName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMediName.Name = "txtMediName";
@@ -202,7 +181,6 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtMediName.PlaceholderText = "";
             this.txtMediName.ReadOnly = true;
             this.txtMediName.SelectedText = "";
-            this.txtMediName.ShadowDecoration.Parent = this.txtMediName;
             this.txtMediName.Size = new System.Drawing.Size(261, 36);
             this.txtMediName.TabIndex = 19;
             // 
@@ -223,14 +201,11 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtMediId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtMediId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtMediId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMediId.DisabledState.Parent = this.txtMediId;
             this.txtMediId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMediId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMediId.FocusedState.Parent = this.txtMediId;
             this.txtMediId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMediId.ForeColor = System.Drawing.Color.Black;
             this.txtMediId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMediId.HoverState.Parent = this.txtMediId;
             this.txtMediId.Location = new System.Drawing.Point(290, 129);
             this.txtMediId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMediId.Name = "txtMediId";
@@ -238,7 +213,6 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtMediId.PlaceholderText = "";
             this.txtMediId.ReadOnly = true;
             this.txtMediId.SelectedText = "";
-            this.txtMediId.ShadowDecoration.Parent = this.txtMediId;
             this.txtMediId.Size = new System.Drawing.Size(261, 36);
             this.txtMediId.TabIndex = 17;
             // 
@@ -254,15 +228,14 @@ namespace PharmacyManagementMini.PharmacistUC
             // 
             // txtExpireDate
             // 
-            this.txtExpireDate.CheckedState.Parent = this.txtExpireDate;
+            this.txtExpireDate.Checked = true;
             this.txtExpireDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtExpireDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtExpireDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.txtExpireDate.HoverState.Parent = this.txtExpireDate;
             this.txtExpireDate.Location = new System.Drawing.Point(287, 315);
             this.txtExpireDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtExpireDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtExpireDate.Name = "txtExpireDate";
-            this.txtExpireDate.ShadowDecoration.Parent = this.txtExpireDate;
             this.txtExpireDate.Size = new System.Drawing.Size(264, 36);
             this.txtExpireDate.TabIndex = 25;
             this.txtExpireDate.Value = new System.DateTime(2022, 3, 3, 2, 11, 47, 773);
@@ -284,21 +257,17 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtNoOfUnits.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtNoOfUnits.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtNoOfUnits.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNoOfUnits.DisabledState.Parent = this.txtNoOfUnits;
             this.txtNoOfUnits.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtNoOfUnits.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoOfUnits.FocusedState.Parent = this.txtNoOfUnits;
             this.txtNoOfUnits.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoOfUnits.ForeColor = System.Drawing.Color.Black;
             this.txtNoOfUnits.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNoOfUnits.HoverState.Parent = this.txtNoOfUnits;
             this.txtNoOfUnits.Location = new System.Drawing.Point(735, 199);
             this.txtNoOfUnits.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNoOfUnits.Name = "txtNoOfUnits";
             this.txtNoOfUnits.PasswordChar = '\0';
             this.txtNoOfUnits.PlaceholderText = "";
             this.txtNoOfUnits.SelectedText = "";
-            this.txtNoOfUnits.ShadowDecoration.Parent = this.txtNoOfUnits;
             this.txtNoOfUnits.Size = new System.Drawing.Size(261, 36);
             this.txtNoOfUnits.TabIndex = 27;
             this.txtNoOfUnits.TextChanged += new System.EventHandler(this.txtNoOfUnits_TextChanged);
@@ -330,21 +299,17 @@ namespace PharmacyManagementMini.PharmacistUC
             this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.Parent = this.txtSearch;
             this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.FocusedState.Parent = this.txtSearch;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.HoverState.Parent = this.txtSearch;
             this.txtSearch.Location = new System.Drawing.Point(19, 117);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
             this.txtSearch.Size = new System.Drawing.Size(210, 36);
             this.txtSearch.TabIndex = 29;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
@@ -364,19 +329,15 @@ namespace PharmacyManagementMini.PharmacistUC
             // 
             this.btnAddToCart.BorderRadius = 19;
             this.btnAddToCart.BorderThickness = 1;
-            this.btnAddToCart.CheckedState.Parent = this.btnAddToCart;
-            this.btnAddToCart.CustomImages.Parent = this.btnAddToCart;
             this.btnAddToCart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnAddToCart.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddToCart.ForeColor = System.Drawing.Color.White;
             this.btnAddToCart.HoverState.FillColor = System.Drawing.Color.White;
             this.btnAddToCart.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnAddToCart.HoverState.Parent = this.btnAddToCart;
             this.btnAddToCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddToCart.Image")));
             this.btnAddToCart.ImageSize = new System.Drawing.Size(30, 30);
             this.btnAddToCart.Location = new System.Drawing.Point(850, 347);
             this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.ShadowDecoration.Parent = this.btnAddToCart;
             this.btnAddToCart.Size = new System.Drawing.Size(146, 48);
             this.btnAddToCart.TabIndex = 31;
             this.btnAddToCart.Text = "Add to Cart";
@@ -384,46 +345,41 @@ namespace PharmacyManagementMini.PharmacistUC
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.guna2DataGridView1.AllowUserToAddRows = false;
+            this.guna2DataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 21;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(287, 404);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(756, 237);
             this.guna2DataGridView1.TabIndex = 32;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -437,7 +393,7 @@ namespace PharmacyManagementMini.PharmacistUC
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -451,19 +407,15 @@ namespace PharmacyManagementMini.PharmacistUC
             // 
             this.btnRemove.BorderRadius = 19;
             this.btnRemove.BorderThickness = 1;
-            this.btnRemove.CheckedState.Parent = this.btnRemove;
-            this.btnRemove.CustomImages.Parent = this.btnRemove;
             this.btnRemove.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.HoverState.FillColor = System.Drawing.Color.White;
             this.btnRemove.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnRemove.HoverState.Parent = this.btnRemove;
             this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
             this.btnRemove.ImageSize = new System.Drawing.Size(30, 30);
             this.btnRemove.Location = new System.Drawing.Point(287, 647);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.ShadowDecoration.Parent = this.btnRemove;
             this.btnRemove.Size = new System.Drawing.Size(146, 48);
             this.btnRemove.TabIndex = 33;
             this.btnRemove.Text = "Remove";
@@ -473,19 +425,15 @@ namespace PharmacyManagementMini.PharmacistUC
             // 
             this.btnPurchasePrint.BorderRadius = 19;
             this.btnPurchasePrint.BorderThickness = 1;
-            this.btnPurchasePrint.CheckedState.Parent = this.btnPurchasePrint;
-            this.btnPurchasePrint.CustomImages.Parent = this.btnPurchasePrint;
             this.btnPurchasePrint.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnPurchasePrint.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchasePrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchasePrint.ForeColor = System.Drawing.Color.White;
             this.btnPurchasePrint.HoverState.FillColor = System.Drawing.Color.White;
             this.btnPurchasePrint.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.btnPurchasePrint.HoverState.Parent = this.btnPurchasePrint;
             this.btnPurchasePrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchasePrint.Image")));
             this.btnPurchasePrint.ImageSize = new System.Drawing.Size(30, 30);
             this.btnPurchasePrint.Location = new System.Drawing.Point(867, 647);
             this.btnPurchasePrint.Name = "btnPurchasePrint";
-            this.btnPurchasePrint.ShadowDecoration.Parent = this.btnPurchasePrint;
             this.btnPurchasePrint.Size = new System.Drawing.Size(176, 48);
             this.btnPurchasePrint.TabIndex = 34;
             this.btnPurchasePrint.Text = "Purchase & Print";
@@ -505,36 +453,6 @@ namespace PharmacyManagementMini.PharmacistUC
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mediciine Id";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Medicine Name";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Expiry Date";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Price Per Unit";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "No of Units";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Total Price";
-            this.Column6.Name = "Column6";
             // 
             // UC_P_SellMedicine
             // 
@@ -599,11 +517,5 @@ namespace PharmacyManagementMini.PharmacistUC
         private Guna.UI2.WinForms.Guna2Button btnPurchasePrint;
         private System.Windows.Forms.Label totalLabel;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
